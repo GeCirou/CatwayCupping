@@ -3,49 +3,112 @@
     <head>
    	 <meta charset="utf-8">
    	 <title>CATWAY - Planilla de Cupping </title>
+       <link rel="stylesheet"  href="style.css">
     </head>
     <body>
    	 <h1> Planilla para Cupping</h1>
    	 <p>
-   		 <form method = "post">
-   			 <h3>Café</h3><br>
-   				 <input type="text" name="cafe"><br>
-   			 <h3>Aroma</h3>
-   			 Cantidad<br>
-   				 <input type="number" name="aromaCant"><br>
-   			 Calidad<br>
-   				 <input type="number" name="aromaCal"><br>
-   			 <h3>Sabor</h3>
-   			 Cantidad<br>
-   				 <input type="number" name="saborCant"><br>
-   			 Calidad<br>
-   				 <input type="number" name="saborCal"><br>
-			 <h3>Acidez</h3>
-   			 Cantidad<br>
-   				 <input type="number" name="acidCant"><br>
-   			 Calidad<br>
-   				 <input type="number" name="acidCal"><br>
-   			 <h3>Textura</h3>
-   			 Cantidad<br>
-   				 <input type="number" name="texCant"><br>
-   			 Calidad<br>
-   				 <input type="number" name="texCal"><br>
-			 <h3>Dulzor</h3>
-   			 Cantidad<br>
-   				 <input type="number" name="dulCant"><br>
-   			 Calidad<br>
-   				 <input type="number" name="dulCal"><br>
-   			 <h3>Final</h3>
-   			 Cantidad<br>
-   				 <input type="number" name="finCant"><br>
-   			 Calidad<br>
-   				 <input type="number" name="finCal"><br>
-			<br>
-			<button type="button">Total</button> <br>
-			<label for="total">00</label>
-
-   		 </form>
-
+   		<form action="POST" class="formulario">
+            <table class="name">
+               <tr>
+                  <td><h3>Café: </h3></td>
+                  <td><input type="text" placeholder="Marca y origen" name="cafe"></td>
+               </tr>
+            </table>
+            <div class="container">
+               <table>
+                  <tr>
+                     <th><h3>Aroma</h3></th>
+                  </tr>
+                  <tr><td>Cantidad</td></tr>
+                  <tr><td><input type="range" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
+                      <td><label id="rangeValue"> 3</label></td>
+                  </tr>
+                  <tr><td>Calidad</td></tr>
+                  <tr><td><input type="range" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
+                      <td><label id="rangeValue"> 3</label></td>
+                  </tr>
+                  <tr>
+                     <th><h3>Sabor</h3></th>
+                  </tr>
+                  <tr><td>Cantidad</td></tr>
+                  <tr><td><input type="range" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
+                      <td><label id="rangeValue"> 3</label></td>
+                  </tr>
+                  <tr><td>Calidad</td></tr>
+                  <tr><td><input type="range" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
+                      <td><label id="rangeValue"> 3</label></td>
+                  </tr>
+                  <tr>
+                     <th><h3>Acidez</h3></th>
+                  </tr>
+                  <tr><td>Cantidad</td></tr>
+                  <tr><td><input type="range" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
+                      <td><label id="rangeValue"> 3</label></td>
+                  </tr>
+                  <tr><td>Calidad</td></tr>
+                  <tr><td><input type="range" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
+                      <td><label id="rangeValue"> 3</label></td>
+                  </tr>
+                  <tr>
+                     <th><h3>Textura</h3></th>
+                  </tr>
+                  <tr><td>Cantidad</td></tr>
+                  <tr><td><input type="range" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
+                      <td><label id="rangeValue"> 3</label></td>
+                  </tr>
+                  <tr><td>Calidad</td></tr>
+                  <tr><td><input type="range" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
+                      <td><label id="rangeValue"> 3</label></td>
+                  </tr>
+                  <tr>
+                     <th><h3>Dulzor</h3></th>
+                  </tr>
+                  <tr><td>Cantidad</td></tr>
+                  <tr><td><input type="range" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
+                      <td><label id="rangeValue"> 3</label></td>
+                  </tr>
+                  <tr><td>Calidad</td></tr>
+                  <tr><td><input type="range" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
+                      <td><label id="rangeValue"> 3</label></td>
+                  </tr>
+                  <tr>
+                     <th><h3>Final</h3></th>
+                  </tr>
+                  <tr><td>Cantidad</td></tr>
+                  <tr><td><input type="range" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
+                      <td><label id="rangeValue"> 3</label></td>
+                  </tr>
+                  <tr><td>Calidad</td></tr>
+                  <tr><td><input type="range" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
+                      <td><label id="rangeValue"> 3</label></td>
+                  </tr>
+               </table>
+            </div>
+            <div class="total">
+               <table>
+                  <tr>
+                     <td>Total: </td>
+                     <td><label for="total">00</label></td>
+                  </tr>
+               </table>
+            </div>
+            <div class="observacion">
+               <table>
+                  <tr>
+                     <td>Observaciones:</td>
+                  </tr>
+                  <tr>
+                     <td><input type="text" placeholder="Observaciones" oninput="observ.innerText = this.value" name="obs"></td>
+                  <tr>
+                     <td><label id="observ"></label></td>
+                  </tr>
+                  <tr>
+                     <td><button type="button" id="save">Guardar</button></td>
+                  </tr>
+               </table>
+            </div>
+   		</form>
    	 </p>
     </body>
 </html>
