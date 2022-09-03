@@ -6,26 +6,41 @@ body{
 	width: 40%;
 	background-color: beige;
 	border: 2px brown dotted;
-	border-radius: 5%;
+	border-radius: 10px;
 	padding: 1% 5% 2%;
 	margin: 0px auto;
+}
+.rango{
+	width: 30em;
 }
 .total{
 	width: 40%;
 	background-color: beige;
 	border: 2px brown dotted;
-	border-radius: 20%;
+	border-radius: 10px;
 	margin: 0px auto;
 	padding: 1% 5% 2%;
+	font-size: 20pt;
 }
 .observacion{
 	width: 40%;
 	background-color: beige;
 	border: 2px brown dotted;
-	border-radius: 10%;
+	border-radius: 10px;
 	padding: 1% 5% 2%;
 	margin: 0px auto;
 }
 table{
 	margin: 0% auto;
+}
+.guardar{
+	font-size: 15pt;
+	padding: 5pt 10pt;
+}
+.pie{
+	text-align: center;
+	font-size: 12pt;
+	background-color: beige;
+	display: block;
+	padding: 1em 10em;
 }

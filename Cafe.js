@@ -1,3 +1,12 @@
+var nombre ="";
+var aroma;
+var sabor;
+var acidez;
+var textura;
+var dulzor;
+var final;
+var total = 0;
+
 function Cafe(){
     this.name;
     this.aroma;
@@ -9,3 +18,4 @@ function Cafe(){
     this.total;
 
 }
+
