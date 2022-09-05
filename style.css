@@ -1,41 +1,62 @@
-body{
-	position: relative;
-	text-align: center;
+*{
+	box-sizing: border-box;
 }
-.container{
-	width: 40%;
+body{
+	text-align: center;
+	margin: 0;
+}
+header{
 	background-color: beige;
-	border: 2px brown dotted;
-	border-radius: 10px;
-	padding: 1% 5% 2%;
+	margin: 0;
+	padding: 10px 50px;
+}
+h1{
+	text-shadow: 2px 2px 5px rgba(205,150,100);
+}
+h3{
+	font-size: 17pt;
+	text-decoration: underline;
+}
+button{
+	font-size: 15pt;
+	font-weight: bold;
+	padding: 5pt 10pt;
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.5);
+	box-shadow: 2px 2px 10px rgba(210,105,30);
+	background-color: rgba(245,222,179);
+}
+button:hover{
+	color: rgba(245,245,245);
+	background-color: rgba(210,105,30);
+	box-shadow: 2px 2px 10px rgba(0,0,0);
+}
+.container1{
+	width: 20%;
+	background-color: beige;
+}
+.container2{
+	font-weight: bold;
+	width: 50%;
 	margin: 0px auto;
+	background-color: beige;
+	border: 3px dotted rgba(210,105,30);
+	border-radius: 10px;
+}
+.container3{
+	width: 50%;
+	margin: 0px auto;
+	background-color: beige;
 }
 .rango{
 	width: 30em;
-}
-.total{
-	width: 40%;
-	background-color: beige;
-	border: 2px brown dotted;
-	border-radius: 10px;
-	margin: 0px auto;
-	padding: 1% 5% 2%;
-	font-size: 20pt;
-}
-.observacion{
-	width: 40%;
-	background-color: beige;
-	border: 2px brown dotted;
-	border-radius: 10px;
-	padding: 1% 5% 2%;
-	margin: 0px auto;
+	margin: auto;
 }
 table{
 	margin: 0% auto;
 }
-.guardar{
-	font-size: 15pt;
-	padding: 5pt 10pt;
+.total{
+	font-size: 20pt;
 }
 .pie{
 	text-align: center;

@@ -6,16 +6,22 @@
        <link rel="stylesheet"  href="style.css">
     </head>
     <body>
-   	 <h1> Planilla para Cupping</h1>
-   	 <p>
+      <header>
+         <div class="container1">
+            <p class="logo"><h2>CATWAY CAFÉ</h2></p>
+         </div>
+      </header>
+   	<h1> Planilla para Cupping</h1>
    		<form action="POST" class="formulario">
-            <table id="nombre" class="name">
-               <tr>
-                  <td><h3>Café: </h3></td>
-                  <td><input type="text" placeholder="Marca y origen" name="cafe"></td>
-               </tr>
-            </table>
-            <div class="container">
+            <div class="container2">
+               <table id="nombre" class="name">
+                  <tr>
+                     <td><h3>Café: </h3></td>
+                     <td><input type="text" placeholder="Marca y origen" name="cafe"></td>
+                  </tr>
+               </table>
+            </div>
+            <div class="container2">
                <table>
                   <tr>
                      <th><h3>Aroma</h3></th>
@@ -85,31 +91,36 @@
                   </tr>
                </table>
             </div>
-            <div class="total">
-               <table>
-                  <tr>
-                     <td>Total: </td>
-                     <td><label for="total">00</label></td>
-                  </tr>
-               </table>
+            <div class="container2">
+               <p>
+                  <table>
+                     <tr>
+                        <td class="total">Total: </td>
+                        <td><label class="total" for="total">00</label></td>
+                     </tr>
+                  </table>
+               </p>
             </div>
-            <div class="observacion">
+            <div class="container2">
                <table>
                   <tr>
-                     <td>Observaciones:</td>
+                     <td><h3>Observaciones:</h3></td>
                   </tr>
                   <tr>
                      <td><textarea rows="10" cols="30" class="obs" placeholder="Observaciones" oninput="observ.innerText = this.value" name="obs"></textarea></td>
                </table>
             </div>
-            <br>
-            <button type="button" id="save" class="guardar">Guardar</button>
    		</form>
-   	 </p>
-       <p id="mostrar"></p>
-       <footer class="pie">
-         <p>Catway Café 2022</p>
-         <p><a href="#nombre">Volver al comienzo</a></p>
-       </footer>
+      <div class="container2">
+         <p><button type="button" id="save" class="guardar">Guardar</button></p>
+         <p id="mostrar"></p>
+      </div>
+      <br>
+      <footer class="pie">
+         <div class="container3">
+            <p>&copy; Catway Café 2022</p>
+            <p><a href="#nombre">Volver al comienzo</a></p>
+         </div>
+      </footer>
     </body>
 </html>
