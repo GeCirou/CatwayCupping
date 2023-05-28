@@ -1,77 +1,90 @@
+:root {
+	--primaryColor: rgba(245,222,179);
+	--shadowColor: rgba(210,105,30);
+	--lightColor: rgba(245,245,245);
+}
+
 *{
 	box-sizing: border-box;
-}
-body{
-	text-align: center;
 	margin: 0;
+	padding: 0;
 }
+html {
+	font-size: 62.5%;
+}
+
+/* Header */
 header{
-	background-color: beige;
-	margin: 0;
-	padding: 10px 50px;
+	width: 100vw;
+	background-color: var(--primaryColor);
+	justify-items: center;
+	display: grid;
+	grid-template-columns: 1fr 10fr;
+	grid-template-rows: 1fr 1fr;
+}
+header img {
+	grid-row: 1/3;
 }
 h1{
-	text-shadow: 2px 2px 5px rgba(205,150,100);
+	font-size: 4rem;
+	text-shadow: 2px 2px 5px var(--shadowColor);
 }
+h2 {
+	font-size: 3rem;
+}
+
+/* Main */
+main{
+	text-align: center;
+}
+
+section {
+	width: 75%;
+	max-width: 1100px;
+	padding: 2rem;
+	margin: 1rem auto;
+	background-color: var(--primaryColor);
+	border: 5px solid var(--shadowColor);
+	border-radius: 10px;
+}
+
+.caracteristicas-item {
+	width: 300px;
+	height: auto;
+	border: 3px dotted var(--lightColor);
+	border-radius: 10px;
+}
+
 h3{
-	font-size: 17pt;
+	margin-bottom: 2rem;
+	font-size: 2rem;
 	text-decoration: underline;
 }
 button{
-	font-size: 15pt;
+	
 	font-weight: bold;
-	padding: 5pt 10pt;
 	border-radius: 5px;
 	border: 1px solid rgba(0,0,0,0.5);
-	box-shadow: 2px 2px 10px rgba(210,105,30);
-	background-color: rgba(245,222,179);
+	box-shadow: 2px 2px 10px var(--shadowColor);
+	background-color: var(--primaryColor);
 }
 button:hover{
-	color: rgba(245,245,245);
-	background-color: rgba(210,105,30);
+	color: var(--lightColor);
+	background-color: var(--shadowColor);
 	box-shadow: 2px 2px 10px rgba(0,0,0);
 }
-.container1{
-	width: 20%;
-	background-color: beige;
-}
-.container2{
-	font-weight: bold;
-	width: 75%;
-	max-width: 1400px;
-	margin: 0px auto;
-	background-color: beige;
-	border: 3px dotted rgba(210,105,30);
-	border-radius: 10px;
-	padding: 0px 0px 30px 0px;
-}
-.container3{
-	width: 50%;
-	margin: 0px auto;
-	background-color: beige;
-}
-.name{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.rango{
+
+/* Range slider */
+/* .rango{
 	max-width: 30em;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-table{
-	margin: 0% auto;
-}
-.total{
-	font-size: 20pt;
-}
-.pie{
+} */
+
+/* Footer */
+footer {
 	text-align: center;
-	font-size: 12pt;
-	background-color: beige;
-	display: block;
-	padding: 1em 10em;
+	background-color: var(--primaryColor);
 }

@@ -2,125 +2,104 @@
 <html>
     <head>
    	 <meta charset="utf-8">
-   	 <title>CATWAY - Planilla de Cupping </title>
+       <meta name="robots" content="index, follow">
+       <meta name="description" content="Es una planilla online para acompañar catas de café">
+   	 <title>CATWAY - Planilla de Cupping</title>
        <link rel="stylesheet"  href="style.css">
     </head>
     <body>
       <header>
-         <div class="container1">
-            <p class="logo"><h2>CATWAY CAFÉ</h2></p>
-         </div>
+         <img src="" alt="Logo Catway café">
+         <h1>CATWAY CAFÉ</h1>
+         <h2> Planilla para Cupping</h2>
       </header>
-   	<h1> Planilla para Cupping</h1>
-   		<form action="POST" class="formulario">
-            <div class="container2">
-               <table id="nombre" class="name">
-                  <tr>
-                     <td><h3>Café: </h3></td>
-                     <td><input type="text" placeholder="Marca y origen" name="cafe"></td>
-                  </tr>
-               </table>
+      <main>
+         <section class="main-container__cafe">
+            <h3>Café: </h3>
+            <label for="">
+               <span>Marca: </span>
+            <input type="text" name="marca" placeholder="Marca">
+            </label>
+            <label for="">
+               <span>Origen: </span>
+            <input type="text" name="origen" placeholder="Origen">
+            </label>
+            <label for="">
+               <span>Tueste: </span>
+            <input type="text" name="tueste" placeholder="Tono de tostado">
+            </label>
+            <button>Guardar</button>
+         </section>
+         <section class="main-container__caracteristicas">
+            <div class="caracteristicas-item">
+               <h3>Aroma</h3>
+               <span>Intensidad</span>
+               <input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCantidad">
+               <label id="rangeValue"> 3</label>
+               <span>Calidad</span>
+               <input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCalidad">
+               <label id="rangeValue"> 3</label>
             </div>
-            <div class="container2">
-               <table>
-                  <tr>
-                     <th><h3>Aroma</h3></th>
-                  </tr>
-                  <tr><td>Cantidad</td></tr>
-                  <tr><td><input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
-                      <td><label id="rangeValue"> 3</label></td>
-                  </tr>
-                  <tr><td>Calidad</td></tr>
-                  <tr><td><input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
-                      <td><label id="rangeValue"> 3</label></td>
-                  </tr>
-                  <tr>
-                     <th><h3>Sabor</h3></th>
-                  </tr>
-                  <tr><td>Cantidad</td></tr>
-                  <tr><td><input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
-                      <td><label id="rangeValue"> 3</label></td>
-                  </tr>
-                  <tr><td>Calidad</td></tr>
-                  <tr><td><input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
-                      <td><label id="rangeValue"> 3</label></td>
-                  </tr>
-                  <tr>
-                     <th><h3>Acidez</h3></th>
-                  </tr>
-                  <tr><td>Cantidad</td></tr>
-                  <tr><td><input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
-                      <td><label id="rangeValue"> 3</label></td>
-                  </tr>
-                  <tr><td>Calidad</td></tr>
-                  <tr><td><input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
-                      <td><label id="rangeValue"> 3</label></td>
-                  </tr>
-                  <tr>
-                     <th><h3>Textura</h3></th>
-                  </tr>
-                  <tr><td>Cantidad</td></tr>
-                  <tr><td><input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
-                      <td><label id="rangeValue"> 3</label></td>
-                  </tr>
-                  <tr><td>Calidad</td></tr>
-                  <tr><td><input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
-                      <td><label id="rangeValue"> 3</label></td>
-                  </tr>
-                  <tr>
-                     <th><h3>Dulzor</h3></th>
-                  </tr>
-                  <tr><td>Cantidad</td></tr>
-                  <tr><td><input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
-                      <td><label id="rangeValue"> 3</label></td>
-                  </tr>
-                  <tr><td>Calidad</td></tr>
-                  <tr><td><input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
-                      <td><label id="rangeValue"> 3</label></td>
-                  </tr>
-                  <tr>
-                     <th><h3>Final</h3></th>
-                  </tr>
-                  <tr><td>Cantidad</td></tr>
-                  <tr><td><input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
-                      <td><label id="rangeValue"> 3</label></td>
-                  </tr>
-                  <tr><td>Calidad</td></tr>
-                  <tr><td><input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="aromaCant"></td>
-                      <td><label id="rangeValue"> 3</label></td>
-                      <td> </td>
-                  </tr>
-               </table>
+            <div class="caracteristicas-item">
+               <h3>Sabor</h3>
+               <span>Intensidad</span>
+               <input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="saborCantidad">
+               <label id="rangeValue"> 3</label>
+               <span>Calidad</span>
+               <input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="saborCalidad">
+               <label id="rangeValue"> 3</label>
             </div>
-            <div class="container2">
-               <p>
-                  <table>
-                     <tr>
-                        <td class="total">Total: </td>
-                        <td><label class="total" for="total">00</label></td>
-                     </tr>
-                  </table>
-               </p>
+            <div class="caracteristicas-item">
+               <h3>Acidez</h3>
+               <span>Intensidad</span>
+               <input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="acidezCantidad">
+               <label id="rangeValue"> 3</label>
+               <span>Calidad</span>
+               <input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="acidezCalidad">
+               <label id="rangeValue"> 3</label>
             </div>
-            <div class="container2">
-               <table>
-                  <tr>
-                     <td><h3>Observaciones:</h3></td>
-                  </tr>
-                  <tr>
-                     <td><textarea rows="10" cols="30" class="obs" placeholder="Observaciones" oninput="observ.innerText = this.value" name="obs"></textarea></td>
-               </table>
+            <div class="caracteristicas-item">
+               <h3>Textura</h3>
+               <span>Intensidad</span>
+               <input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="texturaCantidad">
+               <label id="rangeValue"> 3</label>
+               <span>Calidad</span>
+               <input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="texturaCalidad">
+               <label id="rangeValue"> 3</label>
             </div>
-   		</form>
-      <div class="container2">
-         <p><button type="button" id="save" class="guardar">Guardar</button></p>
-         <p id="mostrar"></p>
-      </div>
-      <br>
-      <footer class="pie">
-         <div class="container3">
+            <div class="caracteristicas-item">
+               <h3>Dulzor</h3>
+               <span>Intensidad</span>
+               <input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="dulzorCantidad">
+               <label id="rangeValue"> 3</label>
+               <span>Calidad</span>
+               <input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="dulzorCalidad">
+               <label id="rangeValue"> 3</label>
+            </div>
+            <div class="caracteristicas-item">
+               <h3>Final</h3>
+               <span>Intensidad</span>
+               <input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="finalCantidad">
+               <label id="rangeValue"> 3</label>
+               <span>Calidad</span>
+               <input type="range" class="rango" min="0" max="5" step="1" value="3" oninput="rangeValue.innerText = this.value" name="finalCalidad">
+               <label id="rangeValue"> 3</label>
+            </div>
+            <div class="caracteristicas-item">
+               <span>Total: </span>
+               <label class="total" for="total">00</label>
+            </div>
+            <div class="caracteristicas-item">
+               <span>Observaciones: </span>
+               <textarea rows="10" cols="30" class="obs" placeholder="Observaciones" oninput="observ.innerText = this.value" name="obs"></textarea>
+            </div>
+            <button type="button" id="save" class="guardar">Guardar</button>
+         </section>
+      </main>
+      <footer>
+         <div>
+            <a href="#nombre">Volver al comienzo</a>
             <p>&copy; Catway Café 2022</p>
-            <p><a href="#nombre">Volver al comienzo</a></p>
          </div>
       </footer>
     </body>
